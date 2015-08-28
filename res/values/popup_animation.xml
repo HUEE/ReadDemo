@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/button_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/button_popup_exit</item>
+    </style>
+        <style name="PopdownAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/top_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/top_popup_exit</item>
+    </style>
+        <style name="PoprightAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/right_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/right_popup_exit</item>
+    </style>
+</resources>

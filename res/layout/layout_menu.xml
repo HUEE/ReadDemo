@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/tab_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/btn_home"
+        android:background="#ffffff"
+        android:layout_height="40dp"
+        android:onClick="MyOnClickListener"
+        android:layout_width="fill_parent"       
+        android:text="首页" />
+
+    <TextView
+        android:onClick="MyOnClickListener"
+        android:id="@+id/btn_classes"
+        android:layout_width="fill_parent"
+        android:background="#ffffff"
+        android:layout_height="40dp"
+        android:text="分类" />
+
+    <Button
+        android:id="@+id/btn_shopcar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="购物车" />
+
+    <Button
+        android:id="@+id/btn_center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="个人中心" />
+
+</LinearLayout>

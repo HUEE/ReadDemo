@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+      <!-- android:background="@drawable/gallery_background" -->
+	<LinearLayout 
+	    android:padding="10dp"
+	    android:paddingBottom="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+	     <LinearLayout 
+	          android:layout_width="fill_parent"
+	          android:layout_height="180dp"
+	          android:layout_weight="1"
+	          android:orientation="vertical"
+	          android:gravity="center">
+	        <TextView 
+	            android:id="@+id/main_page1_title"
+	            android:layout_weight="2"
+	            android:paddingLeft="20dp"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="他们最幸福"
+	            android:gravity="center_vertical"
+	            android:textSize="25dp"
+	            
+	            />
+	        <LinearLayout 
+	            android:layout_weight="1"
+	            android:paddingLeft="20dp"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+	            android:gravity="center_vertical">
+	            <ImageView 
+	                android:layout_width="20dp"
+	                android:layout_height="20dp"
+	                android:scaleType="fitXY"
+	                android:src="@drawable/star_on_normal"
+
+	                />
+	            <ImageView 
+	                android:layout_width="20dp"
+	                android:layout_height="20dp"
+	                android:scaleType="fitXY"
+	                android:src="@drawable/star_on_normal"
+	               
+	                />
+	            <ImageView 
+	                android:layout_width="20dp"
+	                android:layout_height="20dp"
+	                android:scaleType="fitXY"
+	                android:src="@drawable/star_on_normal"	               
+	                />
+	            <ImageView 
+	                android:layout_width="20dp"
+	                android:layout_height="20dp"
+	                android:scaleType="fitXY"
+	                android:src="@drawable/star_on_normal"	               
+	                />
+	            <ImageView 
+	                android:layout_width="20dp"
+	                android:layout_height="20dp"
+	                android:scaleType="fitXY"
+	                android:src="@drawable/star_small_hal"	               
+	                />
+	        </LinearLayout>
+	        <TextView 
+	            android:id="@+id/main_page1_context1"
+	            android:paddingLeft="20dp"
+	            android:gravity="center_vertical"
+	            android:layout_weight="1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="大冰     著"
+	            />
+	         <TextView 
+	            android:id="@+id/main_page1_context2"
+	            android:gravity="center_vertical"
+	            android:paddingLeft="20dp"
+	            android:layout_weight="1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="共约 202000 字"
+	            />
+	            <TextView 
+	            android:gravity="center_vertical"
+	            android:id="@+id/main_page1_context3"
+	            android:paddingLeft="20dp"
+	            android:layout_weight="1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="出版社：中信出版社"
+	            />
+
+	      </LinearLayout>
+	       <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="180dp"
+	            android:layout_weight="1"
+	            android:gravity="center">
+	        <ImageView 
+	            android:layout_width="100dp"
+	            android:layout_height="140dp"
+	            android:scaleType="fitXY"
+	            android:src="@drawable/happy"/>
+	       
+	        </LinearLayout>
+        </LinearLayout>
+
+ 	<RelativeLayout
+ 	    
+ 	    android:id="@+id/main_click"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:clickable="true"
+	    android:onClick="homeOnClickLister"
+	    android:layout_marginRight="10dp"
+	    android:background="@drawable/main_read_bt"
+	    android:padding="5dp"> 
+		<ImageView 
+		    android:layout_width="25dp"
+		    android:layout_height="25dp"
+		    android:layout_toLeftOf="@+id/flag"
+		    android:layout_marginRight="2dp"
+		    android:layout_centerVertical="true"
+		    android:src="@drawable/ic_cat_book_white"
+		    android:scaleType="fitXY"/>
+	 	<TextView
+		    android:id="@+id/flag" 
+		    android:layout_width="1dp"
+		   android:layout_height="20dp"
+		    android:layout_centerInParent="true"
+		    android:background="#00000000"/> 
+	    <TextView	        
+	        android:id="@+id/bt1"
+	        android:layout_toRightOf="@+id/flag"
+	        android:layout_centerInParent="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16dp"
+	        android:textColor="#ffffff"  
+	        android:layout_marginLeft="2dp"
+	        android:background="#00000000"        
+	        android:text="阅读"
+	        />
+	    <!--   -->
+ 	</RelativeLayout> 
+ 	<TextView 
+ 	    android:paddingTop="15dp"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:text="简介"
+ 	    android:textSize="23dp"
+ 	    android:paddingLeft="30dp"/>
+ 	<TextView 
+ 	    android:id="@+id/main_page1_context"
+ 	    android:paddingTop="10dp"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:lineSpacingExtra="4dp"
+ 	    android:text="\t\t书中的他们，选择了我们无法经历的生长方式，或粗野或叛逆，或欲扬先抑或归于平静，最终他们又收获了我们只能羡慕的内心强大。\n\t她：一次酒吧邂逅让她和大冰决定出去散散心，于是一路走去了珠穆朗玛峰，这个不用手机的女孩儿，从始至终不知她的名字，七年记忆只留下了一个倔强身影和一朵头花。\n\t\t月月：在选择嫁给一杯白开水之前，她在地球各个角落醒来，环球冒险的生活为她换来一段欲扬先抑的成长，也给了她最终能安稳生活的心和品尝幸福的味蕾。\n\t\t路平：三十之前一直是公务员，却怀着一颗叛逃穷途的心，北漂就要混成签约歌手时，他选择再次叛逃，他似乎永远是命运的旅人，选择爬在树上看这个世界和地面的人们。\n\t\t大军：这个浪漫的流浪歌手，每天的卖唱要以150块钱为目标，这一切只为给他的爱人买一条花裙子，日复一日，他们爱情最好的见证就是满橱飘摇的花裙子。\n\t\t......\n\t\t无论我们当下驻扎在何种生活中，哪怕甘心迷茫，但当看到他们的恣意生长，也会获得笃定的力量，发自内心去相信：幸福的出口绝不单一，并触手可及。\n"
+ 	    android:textSize="14dp"
+ 	    android:paddingLeft="25dp"
+ 	    android:paddingRight="25dp"/>
+ 	<TextView
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="0.5dp"
+ 	    android:layout_marginLeft="25dp"
+ 	    android:layout_marginRight="25dp"
+ 	    android:background="@drawable/line"/>
+ 	 	<TextView 
+ 	    android:paddingTop="15dp"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:text="目录"
+ 	    android:textSize="23dp"
+ 	    android:paddingLeft="30dp"/>
+ 	 	<TextView 
+ 	    android:id="@+id/main_page1_list"
+ 	    android:paddingTop="10dp"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:lineSpacingExtra="10dp"
+ 	    android:text="【序言】 有梦为马\n\t\t1、 伴我行天涯\n\t\t2、 流浪歌手的情人\n\t\t3、 送你一颗糖\n\t\t4、 越狱者\n\t\t5、 西藏往事\n\t\t6、 不用手机的女孩儿\n\t\t7、 想把我唱给你听\n\t\t8、 预约你的墓志铭\n\t\t9、 到死之前，我们都是需要发育的孩子\n\t\t10、 艽野羌塘，尘梦凤凰\n【后记】陪我到可可西里去看海"
+ 	    android:textSize="14dp"
+ 	    android:paddingLeft="25dp"
+ 	    android:paddingRight="25dp"/>
+ 	 	
+ 	
+ 	
+
+</LinearLayout>
+
+</ScrollView>

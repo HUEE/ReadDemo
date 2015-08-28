@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_tab_pressed">#6633B5E5</color>
+     <color name="color_primary">#FF4E3E7F</color>
+    <color name="color_primary_dark">#FF4E3E7F </color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="text_color_orange">#fb7016</color>
+    <color name="orange_color">#fe802f</color>
+    <color name="item_gray">#f7f7f7</color>
+    <color name="gray">#CD9B1D</color>
+    <color name="text_gray">#88837A</color>
+    <color name="trans">#00000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="alpha_90_white">#E6FFFFFF</color>
+    <color name="alpha_10_white">#1AFFFFFF</color>
+</resources>
