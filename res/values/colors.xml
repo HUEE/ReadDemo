@@ -17,4 +17,10 @@
     <color name="actionsheet_gray">#8F8F8F</color>
     <color name="alpha_90_white">#E6FFFFFF</color>
     <color name="alpha_10_white">#1AFFFFFF</color>
+    <color name="ash">#ff78736d</color>
+    <color name="tx_color1">#D2B48C</color>
+    <color name="tx_color2">#DA70D6</color>
+    <color name="tx_color3">#ABABAB</color>
+    <color name="tx_color4">#636363</color>
+   
 </resources>

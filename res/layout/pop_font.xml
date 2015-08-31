@@ -14,25 +14,25 @@
         android:id="@+id/fontcolor1"  
         android:layout_width="45dp"  
         android:layout_height="45dp"
-         android:background="@drawable/setbutton_bgcolor"
+         android:background="@drawable/setbutton_bgcolor1"
         android:layout_marginRight="15dp" />  
          <Button
         android:id="@+id/fontcolor2"  
         android:layout_width="45dp"  
         android:layout_height="45dp"  
-        android:background="@drawable/setbutton_bgcolor"
+        android:background="@drawable/setbutton_bgcolor2"
         android:layout_marginRight="15dp"/> 
          <Button
         android:id="@+id/fontcolor3"  
         android:layout_width="45dp"  
         android:layout_height="45dp"  
-        android:background="@drawable/setbutton_bgcolor"
+        android:background="@drawable/setbutton_bgcolor3"
         android:layout_marginRight="15dp"/>  
          <Button
         android:id="@+id/fontcolor4"  
         android:layout_width="45dp"  
         android:layout_height="45dp"  
-        android:background="@drawable/setbutton_bgcolor" 
+        android:background="@drawable/setbutton_bgcolor4" 
        />   
         </LinearLayout>
 
@@ -41,7 +41,7 @@
       android:layout_height="wrap_content"
       android:gravity="center"
       android:orientation="horizontal"
-      android:padding="5dp" >
+      android:padding="8dp" >
 
       <Button
           android:id="@+id/fontsize_smaller"
@@ -66,37 +66,6 @@
           android:textSize="15dp" />
   </LinearLayout>
   
-  <LinearLayout
-      android:padding="15dp"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:orientation="horizontal" 
-      android:gravity="center">         
-      <ImageView 
-          android:layout_marginLeft="10dp"
-          android:layout_marginRight="10dp"
-          android:layout_width="30dp"
-          android:layout_height="30dp"
-          android:scaleType="fitXY"
-          android:src="@drawable/bright_min"/>
-     <SeekBar
-         android:padding="8dp"
-        android:id="@+id/seekBar"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_gravity="center"
-        android:paddingLeft="15.0dip"
-        android:paddingRight="15.0dip"
-        android:progressDrawable="@drawable/progress_holo_light"
-        android:thumb="@drawable/seekbar_thumb" />
-     <ImageView 
-       android:layout_marginLeft="10dp"
-       android:layout_marginRight="10dp"
-       android:layout_width="30dp"
-       android:layout_height="30dp"
-       android:scaleType="fitXY"
-       android:src="@drawable/bright_max"/>
-  </LinearLayout>
+
 
 </LinearLayout>  

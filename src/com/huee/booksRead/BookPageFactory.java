@@ -70,8 +70,8 @@ public class BookPageFactory {
 	final String[] page = new String[] {"a0.txt","a1.txt","a2.txt","a3.txt","a4.txt","a5.txt",
 			"a6.txt","a7.txt","a8.txt","a9.txt","a10.txt","a11"};
 	private String bookPath = "/sdcard/reader/";
-	Context context ;
-
+	Context context ;	
+    private int color[] = {0x7f07004c,0x7f07004d,0x7f07004e,0x7f07004f} ;
 	final String [] str1 = {
 			"序言:有梦为马","第一章：伴我行天涯", "第二章：流浪歌手的情人", "第三章：送你一颗糖",
 			"第四章：越狱者", "第五章：西藏往事", "第六章：不用手机的女孩儿", "第七章：想把我唱给你听", "第八章：预约你的墓志铭",
@@ -166,6 +166,11 @@ public class BookPageFactory {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	public void setFontColor(int i)
+	{	
+		mPaint.setColor(context.getResources().getColor(color[i]));
+		
 	}
 		
 	public boolean isFirstPage() {

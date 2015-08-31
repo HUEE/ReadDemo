@@ -40,6 +40,9 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.example.toolbar.widget.PagerSlidingTabStrip;
+import com.huee.booksRead.SetingActivity;
+import com.huee.booksRead.SuggestActivity;
+import com.huee.booksRead.author;
 import com.tdx.adapter.MyViewPagerAdapter;
 
 @SuppressLint("NewApi")
@@ -57,8 +60,12 @@ public class MainActivity extends ActionBarActivity {
 	private Context context ;
 	final String[] page = new String[] {"a0.txt","a1.txt","a2.txt","a3.txt","a4.txt","a5.txt",
 			"a6.txt","a7.txt","a8.txt","a9.txt","a10.txt","a11.txt"};
+	final String[] page2 = new String[] {"b0.txt","b1.txt","b2.txt","b3.txt","b4.txt","b5.txt",
+			"b6.txt","b7.txt","b8.txt","b9.txt","b10.txt","b11.txt"};
 	final int[] ram = new int[] {0x7f050000,0x7f050001,0x7f050004,0x7f050005,0x7f050006,
 			0x7f050007,0x7f050008,0x7f050009,0x7f05000a,0x7f05000b,0x7f050002,0x7f050003};
+	final int[] ram2 = new int[] {0x7f05000c,0x7f05000d,0x7f05000e,0x7f050011,0x7f050012,
+			0x7f050013,0x7f050014,0x7f050015,0x7f050016,0x7f050017,0x7f050018,0x7f05000F};
 	@SuppressWarnings("deprecation")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +89,11 @@ public class MainActivity extends ActionBarActivity {
 
 		setSystemBarTintDrawable(getResources().getDrawable(R.drawable.sr_primary));
 		for(int i = 0 ; i <= 11; i++)
-		      copyFile(bookPath+page[i],ram[i]); 
+		{
+		      copyFile(bookPath+page[i],ram[i]);
+		      copyFile(bookPath+page2[i],ram2[i]);
+		}
+		
 		//setSystemBarTintDrawable(R.color.color_primary);
 		init();
 		initViews();
@@ -115,9 +126,11 @@ public class MainActivity extends ActionBarActivity {
 			// TODO Auto-generated method stub
 			switch (v.getId()) {
 			case R.id.slide_persion:
-			//	Toast.makeText(MainActivity.this, "--->1", 1);
+			//	Toast.makeText(MainActivity.this, "--->1", 1);				
 				mDrawerLayout.closeDrawer(Gravity.LEFT);
-				
+				Intent intent5 = new Intent();
+				intent5.setClass(MainActivity.this, author.class);
+				startActivity(intent5);				
 				Toast.makeText(MainActivity.this, "--->1", 1);
 				break;
 			case R.id.slide_happy :
@@ -140,11 +153,18 @@ public class MainActivity extends ActionBarActivity {
 				mViewPager.setCurrentItem(2);
 				break ;
 			case R.id.slide_left :
+				
+				Intent intent1 = new Intent();
+				intent1.setClass(context, SetingActivity.class);
+				startActivity(intent1);
+				mDrawerLayout.closeDrawer(Gravity.LEFT);
+				break ;
+			case R.id.slide_right :
+				
 				Intent intent = new Intent();
 				intent.setClass(context, AboutUsActivity.class);
 				startActivity(intent);
-				break ;
-			case R.id.slide_right :
+				mDrawerLayout.closeDrawer(Gravity.LEFT);
 				break ;
 			default:
 				break;
@@ -168,16 +188,21 @@ public class MainActivity extends ActionBarActivity {
 			public boolean onMenuItemClick(MenuItem item) {
 				switch (item.getItemId()) {
 				case R.id.action_settings:
-					
-					Toast.makeText(MainActivity.this, "action_settings", 0).show();
+					Intent intent1 = new Intent();
+					intent1.setClass(context, SetingActivity.class);
+					startActivity(intent1);
+					mDrawerLayout.closeDrawer(Gravity.LEFT);
 					break;
 				case R.id.action_share:
 			
 					Toast.makeText(MainActivity.this, "action_share", 0).show();
 					break;
 				case R.id.action_back:
+					Intent intent_think = new Intent();
+					intent_think.setClass(MainActivity.this, SuggestActivity.class);
+					startActivity(intent_think);
 					
-					Toast.makeText(MainActivity.this, "action_share", 0).show();
+				
 					break;
 				case R.id.action_about:	
 					Intent intent = new Intent();

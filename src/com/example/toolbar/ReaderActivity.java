@@ -49,7 +49,7 @@ public class ReaderActivity extends Activity {
       		    	finish() ;
       		    	
       		    }    
-      		 }, 5000); 
+      		 }, 1000); 
 
     }
 }

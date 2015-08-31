@@ -569,23 +569,34 @@ public class BookActivity extends Activity {
 				mPageWidget.postInvalidate();
 				break ;
 			case R.id.fontcolor1:
-				pagefactory.setBgBitmap(BitmapFactory.decodeResource(getResources(),
-						R.drawable.bg));
+				//pagefactory.setBgBitmap(BitmapFactory.decodeResource(getResources(),
+						//R.drawable.bg));
+				
+				pagefactory.setFontColor(0);
+				pagefactory.onDraw(mCurPageCanvas);
+				Toast.makeText(BookActivity.this, "1", 0).show();
 				mPageWidget.postInvalidate();
 				break ;
 			case R.id.fontcolor2:
-				pagefactory.setBgBitmap(BitmapFactory.decodeResource(getResources(),
-						R.drawable.bg));
+				//pagefactory.setBgBitmap(BitmapFactory.decodeResource(getResources(),
+						//R.drawable.bg));
+				pagefactory.setFontColor(1);
+				pagefactory.onDraw(mCurPageCanvas);
+				Toast.makeText(BookActivity.this, "2", 0).show();
 				mPageWidget.postInvalidate();
 				break ;
 			case R.id.fontcolor3:
-				pagefactory.setBgBitmap(BitmapFactory.decodeResource(getResources(),
-						R.drawable.bg));
+				//pagefactory.setBgBitmap(BitmapFactory.decodeResource(getResources(),
+						//R.drawable.bg));
+				pagefactory.setFontColor(2);
+				pagefactory.onDraw(mCurPageCanvas);
 				mPageWidget.postInvalidate();
 				break ;
 			case R.id.fontcolor4:
-				pagefactory.setBgBitmap(BitmapFactory.decodeResource(getResources(),
-						R.drawable.bg));
+				//pagefactory.setBgBitmap(BitmapFactory.decodeResource(getResources(),
+						//R.drawable.bg));
+				pagefactory.setFontColor(3);
+				pagefactory.onDraw(mCurPageCanvas);
 				mPageWidget.postInvalidate();
 				break ;
 			case R.id.fontsize_smaller:
@@ -629,8 +640,8 @@ public class BookActivity extends Activity {
 		
 		seekbar = (SeekBar) pop_light.findViewById(R.id.seekBar) ;
 		seekbar.setMax(255); 
-		if(!isAutoBrightness(getContentResolver())){
-			stopAutoBrightness(this.getParent());         	  
+		if(isAutoBrightness(getContentResolver())){
+			stopAutoBrightness(BookActivity.this);         	  
 		}
 		int normal = android.provider.Settings.System.getInt(getContentResolver(),  
                 Settings.System.SCREEN_BRIGHTNESS, 255);
