@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        <include 
+   
+        android:id="@+id/common_toolbar" 
+        layout="@layout/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         />
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/ed1" 
+        android:layout_below="@+id/common_toolbar"
+        android:gravity="top"
+        android:hint="请填写您的建议，收到后我们会尽快处理！！"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_weight="8"
+       />
+    
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+ 	    android:layout_below="@+id/ed1"
+ 	    android:id="@+id/main_click"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:background="@drawable/main_read_bt"> 
+		<ImageView 
+		    android:layout_width="25dp"
+		    android:layout_height="25dp"
+		    android:layout_toLeftOf="@+id/flag"
+		    android:layout_marginRight="2dp"
+		    android:layout_centerVertical="true"
+		    android:src="@drawable/ic_cat_book_white"
+		    android:scaleType="fitXY"/>
+	 	<TextView
+		    android:id="@+id/flag" 
+		    android:layout_width="1dp"
+		   android:layout_height="20dp"
+		    android:layout_centerInParent="true"
+		    android:background="#00000000"/> 
+	    <TextView	        
+	        android:id="@+id/bt1"
+	        android:layout_toRightOf="@+id/flag"
+	        android:layout_centerInParent="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16dp"
+	        android:textColor="#ffffff"  
+	        android:layout_marginLeft="2dp"
+	        android:background="#00000000"        
+	        android:text="提交"
+	        />
+	    <!--   -->
+ 	</RelativeLayout>
+    
+
+</RelativeLayout>
