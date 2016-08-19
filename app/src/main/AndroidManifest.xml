@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.toolbar"
+    package="com.hwj.reader"
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <uses-sdk
-        android:minSdkVersion="10"
-        android:targetSdkVersion="21" />
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/launher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".ReaderActivity"
+            android:name="com.hwj.activity.ReaderActivity"
             android:label="@string/app_name"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
@@ -27,33 +25,26 @@
            
         </activity>
        
-        <activity 
-            android:name="com.example.toolbar.MainActivity"
+        <activity
+            android:name="com.hwj.activity.MainActivity"
             android:theme="@style/AppTheme.NoneTranslucent"
              android:screenOrientation="portrait">
            </activity>
            <activity 
             android:theme="@style/AppTheme.NoneTranslucent"
-            android:name="com.example.toolbar.AboutUsActivity">
+               android:name="com.hwj.activity.AboutUsActivity">
            </activity>
-        <activity 
-            android:name="com.huee.booksRead.BookActivity">
+        <activity android:name="com.hwj.booksRead.BookActivity">
            </activity>
-           <activity 
-            android:name="com.huee.booksRead.BookActivity2">
+           <activity android:name="com.hwj.booksRead.BookActivity2">
            </activity>
-            <activity 
-            android:name="com.huee.booksRead.SetingActivity">
+            <activity android:name="com.hwj.activity.SetingActivity">
            </activity>
            
-            <activity 
-            android:name="com.huee.booksRead.SuggestActivity">author
+            <activity android:name="com.hwj.activity.SuggestActivity">
            </activity>
-           <activity 
-            android:name="com.huee.booksRead.author">
+           <activity android:name="com.hwj.activity.AuthorInfo">
            </activity>
     </application>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-  	<uses-permission android:name="android.permission.WRITE_SETTINGS"/>
 
 </manifest>

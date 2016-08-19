@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.toolbar"
+    package="com.hwj.reader"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="10"
-        android:targetSdkVersion="21" />
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
@@ -15,9 +15,10 @@
         android:allowBackup="true"
         android:icon="@drawable/launher"
         android:label="@string/app_name"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.toolbar.ReaderActivity"
+            android:name="com.hwj.activity.ReaderActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
@@ -29,24 +30,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.toolbar.MainActivity"
+            android:name="com.hwj.activity.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoneTranslucent" >
         </activity>
         <activity
-            android:name="com.example.toolbar.AboutUsActivity"
+            android:name="com.hwj.activity.AboutUsActivity"
             android:theme="@style/AppTheme.NoneTranslucent" >
         </activity>
-        <activity android:name="com.huee.booksRead.BookActivity" >
+        <activity android:name="com.hwj.booksRead.BookActivity" >
         </activity>
-        <activity android:name="com.huee.booksRead.BookActivity2" >
+        <activity android:name="com.hwj.booksRead.BookActivity2" >
         </activity>
-        <activity android:name="com.huee.booksRead.SetingActivity" >
+        <activity android:name="com.hwj.activity.SetingActivity" >
         </activity>
-        <activity android:name="com.huee.booksRead.SuggestActivity" >
-author
+        <activity android:name="com.hwj.activity.SuggestActivity" >
         </activity>
-        <activity android:name="com.huee.booksRead.author" >
+        <activity android:name="com.hwj.activity.AuthorInfo" >
         </activity>
     </application>
 

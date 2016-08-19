@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.toolbar.MainActivity" >
+    tools:context="com.example.toolbar.com.hwj.activity.MainActivity">
 
     <include 
         
@@ -25,11 +25,10 @@
             android:background="#ffffff"
             android:orientation="vertical" >
 
-             <com.example.toolbar.widget.PagerSlidingTabStrip
+            <com.hwj.widget.PagerSlidingTabStrip
                 android:id="@+id/tabs"
                 android:layout_width="match_parent"
-                android:layout_height="0dp" >
-            </com.example.toolbar.widget.PagerSlidingTabStrip> 
+                android:layout_height="0dp" ></com.hwj.widget.PagerSlidingTabStrip>
 
             <android.support.v4.view.ViewPager
                 android:id="@+id/pager"
